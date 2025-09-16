@@ -1,0 +1,47 @@
+[
+  {
+    "name": "echo",
+    "description": "입력받은 메시지를 그대로 따라 말합니다.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "따라 말하게 할 메시지"
+        }
+      },
+      "required": ["message"]
+    }
+  },
+  {
+    "name": "simpleCalculator",
+    "description": "두 숫자를 더하거나 곱합니다.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "num1": {
+          "type": "number",
+          "description": "첫 번째 숫자"
+        },
+        "num2": {
+          "type": "number",
+          "description": "두 번째 숫자"
+        },
+        "operator": {
+          "type": "string",
+          "description": "연산자 ('+' 또는 '*')"
+        }
+      },
+      "required": ["num1", "num2", "operator"]
+    }
+  },
+  {
+    "name": "getCurrentTime",
+    "description": "서버의 현재 날짜와 시간을 알려줍니다.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  }
+]
